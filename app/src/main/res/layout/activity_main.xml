@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_text"
+        android:justificationMode="inter_word"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_below="@id/tv"
+        android:layout_margin="10dp"
+        android:id="@+id/name_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_name"
+         />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@id/name_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:id="@+id/uninstall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/uninstall"
+            android:textAllCaps="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:id="@+id/getbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/get"
+            android:textAllCaps="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+
+
+   <androidx.cardview.widget.CardView
+       android:visibility="gone"
+       android:layout_margin="20dp"
+       android:id="@+id/deepak_card"
+       android:layout_below="@id/linear"
+       android:layout_width="150dp"
+       android:layout_height="100dp"
+       app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="@color/colorPrimary"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/title_deepak"
+           android:layout_gravity="center"
+           android:textSize="20sp"
+           android:fontFamily="serif"
+           android:textColor="#fff"/>
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/sukesh_card"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/deepak_card"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_below="@id/linear"
+        android:layout_width="150dp"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sukesh"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#fff"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/venkat_card"
+        android:layout_below="@id/deepak_card"
+        android:layout_width="150dp"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_venkat"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#fff"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

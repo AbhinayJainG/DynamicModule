@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DynamicModule</string>
+    <string name="title_deepak">Deepak</string>
+    <string name="title_sukesh">Sukesh</string>
+    <string name="title_venkat">Venkat</string>
+    <string name="submit">Submit</string>
+    <string name="uninstall">Uninstall modules2</string>
+    <string name="get">Get modules</string>
+    <string name="enter_name">Enter Name</string>
+
+    <string name="deepak_mod_title">This is Deepak\'s Module</string>
+    <string name="sukesh_mod_title">This is Sukesh\'s Module</string>
+    <string name="venkat_mod_title">This is Venkat\'s Module</string>
+
+
+    <string name="dummy_text">Welcome to Dynamic Feature Module Stuff, \n
+                              Please Enter your name like sukesh or deepak or venkat (lower case letters only )\n
+                               associated module which belongs to ur name will be downloaded &amp; available to use.</string>
+
+
+</resources>

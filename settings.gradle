@@ -1,0 +1,5 @@
+rootProject.name='DynamicModule'
+include ':app'
+include ':deepak'
+include ':sukesh'
+include ':venkat'
